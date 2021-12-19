@@ -1,6 +1,6 @@
 import { IsNumberString } from 'class-validator';
 
-export default class GetExampleByExampleIdDto {
+export default class ExampleByIdDto {
   @IsNumberString()
   exampleId: number;
 }

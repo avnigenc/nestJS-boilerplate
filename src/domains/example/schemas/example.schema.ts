@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
+import * as mongoose from 'mongoose';
 
 @Schema({
   timestamps: true,
@@ -15,7 +16,7 @@ import { Document, Types } from 'mongoose';
   },
 })
 export class Example {
-  @Prop({ type: Types.ObjectId, auto: true })
+  @Prop({ type: mongoose.Schema.Types.ObjectId, auto: true })
   readonly _id: Types.ObjectId;
 
   @Prop()

@@ -1,3 +1,4 @@
-import GetExampleByExampleIdDto from './get-example-by-id.dto';
+import CreateExampleDto from './create-example.dto';
+import ExampleByIdDto from './example-by-id.dto';
 
-export { GetExampleByExampleIdDto };
+export { ExampleByIdDto, CreateExampleDto };
